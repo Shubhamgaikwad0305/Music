@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Song</title>
+
+    <style>
+        body {
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        form {
+          border: 3px solid #f1f1f1;
+          background: linear-gradient(-45deg, #ee7752, #23a6d5, #23d5ab);
+          position: relative;
+          text-align: center;
+          width: 100%;
+        }
+        
+        input[type=text], input[type=password] {
+          width: 100%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          box-sizing: border-box;
+        }
+        
+        button {
+          background-color: black;
+          color: white;
+          padding: 14px 20px;
+          margin: 8px 0;
+          border: none;
+          cursor: pointer;
+          width: 10%;
+        }
+        
+        button:hover {
+          opacity: 0.8;
+        }
+        
+        .imgcontainer {
+          text-align: center;
+          margin: 24px 0 12px 0;
+        }
+        
+        img.avatar {
+          width: 10%;
+          border-radius: 50%;
+        }
+        
+        .container {
+          padding: 16px;
+        }
+        </style>
+    
+</head>
+
+<body>
+    <form action="/addsong" method="post">
+        <div class="imgcontainer">
+            <img src="../static/img/upload icon.jpg" th:src="@{/img/upload icon.jpg}" alt="Avatar" class="avatar">
+          </div>
+        
+        <div class="container">
+            <label for="songname"><b>Song Name</b></label>
+            <input type="text" placeholder="Enter songname" name="Song_Name" required>
+            <br>
+            <label for="audiolink"><b>Audio Link</b></label>
+            <input type="text" placeholder="Enter audiolink" name="Audio_Link" required>
+            <br>
+            <label for="videolink"><b>Video Link</b></label>
+            <input type="text" placeholder="Enter videolink" name="Video_Link" required>
+            <br>
+            <label for="language"><b>Language</b></label>
+            <input type="text" placeholder="Enter language" name="Language" required>
+            <br>
+            <label for="genre"><b>Genre</b></label>
+            <input type="text" placeholder="Enter genre" name="Genre" required>
+            <br>
+            <button class="btn-secondary" type="submit">Upload</button>
+        </div>
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="../static/css/style.css" th:href="@{/css/style.css}" class="css">
+  <link rel="script" href="../static/JS/script.js" th:href="@{/script/script.js}" class="js">
+  <title>Dj Shubham Music</title>
+</head>
+
+<body>
+  <!-- Image and text in nav bar -->
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img src="../static/img/logo.jpg" th:src="@{/img/logo.jpg}" width="60" height="60" alt="logo">
+      Dj Shubham Music
+    </a>
+  </nav>
+
+  <!-- buttons -->
+
+  <div>
+    <ul class="nav justify-content-end">
+      <li class="nav-item">
+        <a class="nav-link active" href="home">HOME</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="aboutus">ABOUT</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="disclaimer">DISCLAIMER</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contactus">CONTACT</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="privacypolicy">PRIVACY POLICY</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="termsofcondition">TERMS & CONDITION</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="adminlogin">ADMIN LOGIN</a>
+      </li>
+  </div>
+
+  <!-- buttons -->
+
+  <div>
+    <form class="form-inline" action="/search" method="POST">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search Your Remix" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+  <br>
+
+  <!--Cards-->
+  <div class="card-deck">
+    <div class="card">
+      <img class="card-img-top" src="../static/img/ennasolla.jpg" th:src="@{/img/ennasolla.jpg}" alt="Card image cap">
+      <div class="card-body">
+        <p class="card-text">Enna Solla | Chinna Chinna Aasaa | Reels Trending Song | Remix | Dj Shubham Music</p>
+        <a href="https://youtu.be/vB0589MwHU8" class="btn btn-primary">Watch Video</a>
+        <a href="https://bit.ly/3IALiMi" class="btn btn-primary">Download MP3</a>
+      </div>
+
+    </div>
+    <div class="card">
+      <img class="card-img-top" src="../static/img/jiggle.jpg" th:src="@{/img/jiggle.jpg}" alt="Card image cap">
+      <div class="card-body">
+        <p class="card-text">Jiggle Jiggle | Marathi Thumka Remix | Dj Shubham Music - Jiggle Jiggle Reels Trending Song
+        </p>
+        <a href="https://youtu.be/X-atzGhUAig" class="btn btn-primary">Watch Video</a>
+        <a href="https://bit.ly/3Z5l1eq" class="btn btn-primary">Download MP3</a>
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top" src="../static/img/lavtekaya.jpg" th:src="@{/img/lavtekaya.jpg}" alt="Card image cap">
+      <div class="card-body">
+        <p class="card-text">Lav Lav Lavate Hi Kaya Dj Song | Remix | Dj Shubham Music - Zala Halla Marathi Song</p>
+        <a href="https://youtu.be/e9mSCXAC_zw" class="btn btn-primary">Watch Video</a>
+        <a href="https://bit.ly/3YGItPr" class="btn btn-primary">Download MP3</a>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <div class="card-deck">
+    <div class="card">
+      <img class="card-img-top" src="../static/img/toofan.jpg" th:src="@{/img/toofan.jpg}" alt="Card image cap">
+      <div class="card-body">
+        <p class="card-text">Use Toofan Kehte Hai | Reels Viral Song Remix | Dj Shubham Music - Abhi Aaya Nahi Hai Wo Dj
+          Song</p>
+        <a href="https://youtu.be/NM1vAVHeNk8" class="btn btn-primary">Watch Video</a>
+        <a href="https://bit.ly/3lMyk5t" class="btn btn-primary">Download MP3</a>
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top" src="../static/img/mehbooba.jpg" th:src="@{/img/mehbooba.jpg}" alt="Card image cap">
+      <div class="card-body">
+        <p class="card-text">Mehbooba Song | KGF Chapter 2 | Remix | Dj Shubham Music - Mehbooba Song Dj Mix</p>
+        <a href="https://youtu.be/-Uikc5U7KIQ" class="btn btn-primary">Watch Video</a>
+        <a href="https://bit.ly/3IerJIp" class="btn btn-primary">Download MP3</a>
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top" src="../static/img/mandir.jpg" th:src="@{/img/mandir.jpg}" alt="Card image cap">
+      <div class="card-body">
+        <p class="card-text">Banayenge Mandir | Ram Navami Special | Remix | Dj Shubham Music - Banayenge Mandir Dj Song
+        </p>
+        <a href="https://youtu.be/Pb4A9jQq83c" class="btn btn-primary">Watch Video</a>
+        <a href="https://bit.ly/3S8TS8p" class="btn btn-primary">Download MP3</a>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <div class="card-deck">
+    <div class="card">
+      <img class="card-img-top" src="../static/img/sanvidhan.jpg" th:src="@{/img/sanvidhan.jpg}" alt="Card image cap">
+      <div class="card-body">
+        <p class="card-text">लिहिलं संविधान DJ | २ वर्ष ११ महिने १८ दिसं | Remix | Dj Shubham Music - Lihil Sanvidhan Dj
+          Song</p>
+        <a href="https://youtu.be/0m4_uBg7AA0" class="btn btn-primary">Watch Video</a>
+        <a href="https://bit.ly/3xBWEJG" class="btn btn-primary">Download MP3</a>
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top" src="../static/img/churaliya.jpg" th:src="@{/img/churaliya.jpg}" alt="Card image cap">
+      <div class="card-body">
+        <p class="card-text">Chura Liya Hai Tumne Jo Dil Ko | Cover ft Music MG | Remix | Dj Shubham Muaic - Reels Viral
+          Song</p>
+        <a href="https://youtu.be/oDqcu89uHcE" class="btn btn-primary">Watch Video</a>
+        <a href="https://bit.ly/3xyfxgz" class="btn btn-primary">Download MP3</a>
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top" src="../static/img/muqabala.jpg" th:src="@{/img/muqabala.jpg}" alt="Card image cap">
+      <div class="card-body">
+        <p class="card-text">Muqabala Muqabala | Hard Bass Remix | Dj Shubham Music - Muqabala Muqabala Dj Mix
+        </p>
+        <a href="https://youtu.be/CUXjiKCyIIE" class="btn btn-primary">Watch Video</a>
+        <a href="https://bit.ly/3IyUaCk" class="btn btn-primary">Download MP3</a>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <!--Footer-->
+  <div>
+    <h5>Follow Me</h5>
+  </div>
+  <br>
+
+  <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Add font awesome icons -->
+  <a href="https://m.facebook.com/djshubhammusic" class="fa fa-facebook"></a>
+  <a href="https://www.instagram.com/djshubhammusic" class="fa fa-instagram"></a>
+  <a href="https://youtube.com/channel/UCXsaRA7nsrxs722qBAgjMZQ" class="fa fa-youtube"></a>
+
+  <!--page no-->
+  <nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-end">
+      <li class="page-item">
+        <a class="page-link" href="secondpage" tabindex="-1">Previous</a>
+      </li>
+      <li class="page-item">
+        <a class="page-link" href="#">Next</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
